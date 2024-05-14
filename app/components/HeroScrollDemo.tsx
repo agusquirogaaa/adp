@@ -19,9 +19,10 @@ export function HeroScrollDemo() {
           </>
         }
       >
-        <div className="mx-auto rounded-2xl object-cover h-full object-left-top">
+        <div className="mx-auto rounded-2xl object-cover h-full object-left-top ">
          <CardStackDemo />
         </div>
+        
       </ContainerScroll>
     </div>
   );

@@ -39,7 +39,7 @@ export const CardStack = ({
   };
 
   return (
-    <div className="relative  h-60 w-60 md:h-60 md:w-96">
+    <div className="relative  h-60 w-60 md:h-60 md:w-96 ">
       {cards.map((card, index) => {
         return (
           <motion.div
@@ -54,10 +54,10 @@ export const CardStack = ({
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
             }}
           >
-            <div className="font-normal text-neutral-700 dark:text-neutral-200">
+            <div className="font-normal text-gray-900 dark:text-neutral-200">
               {card.content}
             </div>
-            <div>
+            <div >
               <p className="text-neutral-500 font-medium dark:text-white">
                 {card.name}
               </p>

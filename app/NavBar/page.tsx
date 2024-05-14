@@ -4,12 +4,13 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from "@/public/hblanco.png"
 import Image from 'next/image'
+import Link from 'next/link'
 const navigation = [
-  { name: 'Inicio', href: '#', current: true },
-  { name: 'Servicios', href: '#', current: false },
-  { name: 'Reflexiones', href: '#', current: false },
-  { name: 'Quien Soy', href: '#', current: false },
-  { name: 'Contacto', href: '#', current: false },
+  { name: 'Inicio', href: '/#Inicio', current: true },
+  { name: 'Servicios', href: '/#Servicios', current: false },
+  { name: 'Reflexiones', href: '/#Reflexiones', current: false },
+  { name: 'Quien Soy', href: '/#Info', current: false },
+  
 ]
 
 function classNames(...classes:any) {
@@ -36,14 +37,14 @@ export default function NavBar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start lg:justify-between">
-                <div className="flex flex-shrink-0 items-center">
+              <div className="flex flex-1 items-center justify-center sm:items-stretch xs:justify-start sm:justify-between">
+                <Link href="#" className="flex flex-shrink-0 items-center">
                   <Image
                     className="h-8 w-auto"
                     src={Logo}
                     alt="Your Company"
                   />
-                </div>
+                </Link>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (

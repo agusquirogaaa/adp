@@ -3,7 +3,7 @@ import { HeroScrollDemo } from "../components/HeroScrollDemo";
 export default function Reflexion() {
     return (
         <> 
-        <div className="bg-violeta">
+        <div className="bg-violeta" id="Reflexiones">
              <HeroScrollDemo />
         </div>
         </>

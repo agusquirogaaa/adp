@@ -86,21 +86,19 @@ export const Card = ({
         boxShadow:
           "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
       }}
-      className="max-w-5xl -mt-12 mx-auto h-[30rem] md:h-[40rem] w-full border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] rounded-[30px] shadow-2xl"
+      className="max-w-5xl mt-12 mx-auto h-[30rem] md:h-[40rem] w-full border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] rounded-[30px] shadow-2xl relative overflow-hidden "
     >
-      <div
-  className="h-full w-full overflow-hidden rounded-2xl md:rounded-2xl md:p-4"
->
-  <Image
-    src={FondoScroll} // Ruta relativa a la imagen de fondoscroll
-    alt="Fondo de pantalla"
-    layout="fill" // La imagen ocupará todo el espacio del div
-    objectFit="cover" // La imagen se ajustará para cubrir completamente el contenedor
-    quality={100} // Calidad de la imagen (valor opcional)
-    className="rounded-2xl opacity-20 fixed" // Clase opcional para estilos adicionales
-  />
-  {children}
-</div>;
+      <div className="h-full w-full relative ">
+        <Image
+          src={FondoScroll}
+          alt="Fondo de pantalla"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          className="rounded-2xl opacity-20"
+        />
+        {children}
+      </div>
     </motion.div>
   );
 };
