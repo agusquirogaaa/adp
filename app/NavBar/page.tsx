@@ -38,7 +38,7 @@ export default function NavBar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch xs:justify-start sm:justify-between">
-                <Link href="#" className="flex flex-shrink-0 items-center">
+                <Link href="/#Inicio" className="flex flex-shrink-0 items-center">
                   <Image
                     className="h-8 w-auto"
                     src={Logo}
