@@ -4,9 +4,8 @@ import NavBar from "./NavBar/page";
 import Reflexion from "./Reflexion/page";
 import Servicios from "./Servicios/page";
 import Info from "./Info/page";
-import Contacto from "./Contacto/page";
 import Footer from "./Footer/page";
-
+import { Contact }from "./components/ui/contacto-btn"
 export default function Home() {
   return (
     <>
@@ -16,6 +15,7 @@ export default function Home() {
       <Reflexion />
       <Info />
       <Footer />
+      <Contact />
       
     </>
   );
