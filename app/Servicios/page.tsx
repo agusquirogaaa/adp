@@ -15,49 +15,48 @@ export default function Servicios() {
         <h2 className="text-bold text-5xl text-violetaoscuro mt-12 mb-5">Servicios</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-10 sm:gap-20 justify-center items-center">   
 
-          <div className="card mx-2 sm:w-96 bg-base-100 shadow-xl flex">
+        <div className="card mx-2 sm:w-96 bg-base-100 shadow-xl">
             <figure className="relative w-full h-72">
               <Image 
                 src={FotoPilates} 
-                alt="Pilates y Gimnasia Postural" 
-                layout="fill"
+                alt="Pilates" 
+                layout="fill" 
                 objectFit="cover"
                 className="rounded-md"
               />
             </figure>
-            <div className="card-body hover:shadow-xl ">
+            <div className="card-body hover:shadow-xl">
               <h2 className="card-title">Pilates </h2>
               <p>Clases presenciales y online. Grupales e individuales.</p>
               <div className="card-actions justify-end">
-              <Link href="/Pilates">
-                <button className="px-4 py-2 rounded-md border border-neutral-300 bg-violeta text-white text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
-                  Ver más
-                </button> 
-              </Link>     
+                <Link href="/Pilates">
+                  <button className="px-4 py-2 rounded-md border border-neutral-300 bg-violeta text-white text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+                    Ver más
+                  </button> 
+                </Link>       
               </div>
             </div>
           </div>
-          
 
-          <div className="card mx-2 sm:w-96 bg-base-100 shadow-xl flex">
+          <div className="card mx-2 sm:w-96 bg-base-100 shadow-xl">
             <figure className="relative w-full h-72">
               <Image 
                 src={GimPost} 
-                alt="Pilates y Gimnasia Postural" 
-                layout="fill"
+                alt="Gim Post" 
+                layout="fill" 
                 objectFit="cover"
                 className="rounded-md"
               />
             </figure>
-            <div className="card-body  hover:shadow-xl ">
-              <h2 className="card-title">Gimnasia Postural </h2>
+            <div className="card-body hover:shadow-xl">
+              <h2 className="card-title">Gimnasia postural + elongación postural global</h2>
               <p>Clases presenciales y online. Grupales e individuales.</p>
               <div className="card-actions justify-end">
-              <Link href="/Postural">
-                <button className="px-4 py-2 rounded-md border border-neutral-300 bg-violeta text-white text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
-                  Ver más
-                </button> 
-              </Link>     
+                <Link href="/Postural">
+                  <button className="px-4 py-2 rounded-md border border-neutral-300 bg-violeta text-white text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+                    Ver más
+                  </button> 
+                </Link>       
               </div>
             </div>
           </div>
@@ -157,6 +156,13 @@ export default function Servicios() {
               </div>
             </div>
           </div>
+          
+         
+
+
+
+
+
         </div>
       </div>
     </div>               
