@@ -37,6 +37,7 @@ export default function Servicios() {
               </div>
             </div>
           </div>
+          
 
           <div className="card mx-2 sm:w-96 bg-base-100 shadow-xl">
             <figure className="relative w-full h-72">
