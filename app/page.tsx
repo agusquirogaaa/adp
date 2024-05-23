@@ -6,7 +6,7 @@ import Servicios from "./Servicios/page";
 import Info from "./Info/page";
 import Footer from "./Footer/page";
 import { Contact }from "./components/ui/contacto-btn"
-import Carrousel from "./Carrousel/page";
+import Fotos from "./Fotos/page";
 import Recursos from "./Recursos/page";
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <Servicios/>
       <Reflexion />
       <Recursos />
-      <Carrousel />
+      <Fotos />
       <Info />
       <Footer />
       <Contact />
