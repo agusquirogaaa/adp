@@ -9,6 +9,8 @@ const navigation = [
   { name: 'Inicio', href: '/#Inicio', current: true },
   { name: 'Servicios', href: '/#Servicios', current: false },
   { name: 'Reflexiones', href: '/#Reflexiones', current: false },
+  { name: 'Recursos', href: '/#Recursos', current: false },
+  { name: 'Fotos', href: '/#Fotos', current: false },
   { name: 'Quien Soy', href: '/#Info', current: false },
   
 ]

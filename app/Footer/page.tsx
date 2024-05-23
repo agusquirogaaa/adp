@@ -1,5 +1,8 @@
 import Image from 'next/image';
 import Logo from "@/public/hblanco.png";
+import { FaWhatsapp, FaInstagram , FaFacebookSquare} from 'react-icons/fa';
+import { CiMail } from "react-icons/ci";
+
 
 export default function Footer() {
   return (
@@ -14,14 +17,30 @@ export default function Footer() {
             <a href="#Inicio" className="text-white text-decoration-none py-2 px-4 md:px-2 md:ml-4 md:mr-0 hover:text-gray-300">Inicio</a>
             <a href="#Servicios" className="text-white text-decoration-none py-2 px-4 md:px-2 md:ml-4 md:mr-0 hover:text-gray-300">Servicios</a>
             <a href="#Reflexiones" className="text-white text-decoration-none py-2 px-4 md:px-2 md:ml-4 md:mr-0 hover:text-gray-300">Reflexiones</a>
+            <a href="#Recursos" className="text-white text-decoration-none py-2 px-4 md:px-2 md:ml-4 md:mr-0 hover:text-gray-300">Recursos</a>
+            <a href="#Fotos" className="text-white text-decoration-none py-2 px-4 md:px-2 md:ml-4 md:mr-0 hover:text-gray-300">Fotos</a>
             <a href="#Info" className="text-white text-decoration-none py-2 px-4 md:px-2 md:ml-4 md:mr-0 hover:text-gray-300">Quien Soy</a>
             
             </nav>
 
         </div>
         <div className="text-center mt-4">
-          <p>&copy; {new Date().getFullYear()} Tu Compañía. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Skyward Digital Solutions. Todos los derechos reservados.</p>
         </div>
+        <div className="flex items-center justify-center mt-12 gap-4">
+            <a href="https://twitter.com/tucuenta" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
+              <FaWhatsapp size={28} />
+            </a>
+            <a href="https://www.instagram.com/tucuenta" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
+              <FaInstagram size={28} />
+            </a>
+            <a href="https://www.linkedin.com/in/tucuenta" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
+              <FaFacebookSquare size={28} />
+            </a>
+            <a href="https://github.com/tucuenta" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
+              <CiMail size={28} />
+            </a>
+          </div>
       </div>
     </footer>
   );

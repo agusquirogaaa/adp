@@ -1,62 +1,118 @@
+"use client"
+
 import NavBar from "../NavBar/page";
 import Image from "next/image";
-import { GrUpgrade } from "react-icons/gr";
-import { GiStrong } from "react-icons/gi";
-import { MdDoNotStep } from "react-icons/md";
 import FotoBienestar from "../../public/sesiones.jpg"
+import { useState, useRef, useEffect } from 'react';
+import { TfiThought } from "react-icons/tfi";
+import { GiAwareness } from "react-icons/gi";
+import { FaLeaf } from "react-icons/fa";
+import { TbBowlFilled, TbDogBowl } from "react-icons/tb";
+import { IoClose } from "react-icons/io5";
 
 export default function Bienestar() {
+    const [isOpen, setIsOpen] = useState(false);
+    const [startY, setStartY] = useState(0);
+    const drawerRef = useRef<HTMLDivElement>(null);
+
+    const toggleDrawer = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const closeDrawer = () => {
+        setIsOpen(false);
+    };
+
+    const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+        setStartY(e.touches[0].clientY);
+    };
+
+    const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+        const currentY = e.touches[0].clientY;
+        if (currentY - startY > 100) {
+            setIsOpen(false);
+        }
+    };
+
+    const handleClickOutside = (event:any) => {
+        if (drawerRef.current && !drawerRef.current.contains(event.target)) {
+            setIsOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     return (
         <>
-             <NavBar />
-            <div className='relative h-screen bg-black'>
-                <div className='absolute inset-0 overflow-hidden'>
-                    <Image src={FotoBienestar} alt="Foto de Pilates" layout="fill" objectFit="cover" className='opacity-20 mt-16' />
-                </div>
-                
-                <div className='absolute inset-0 '>
-                    <div className='h-full grid grid-rows-5'>
-                        <div className='pt-32 ml-5 row-span-4'>
-                        <div className='flex flex-col md:flex-row justify-between items-end mb-20'>
-                            <h2 className='text-4xl md:text-5xl lg:text-8xl font-bold text-violeta'>Taller de Bienestar</h2>
-                            <h3 className='text-white text-lg mr-5 md:text-base lg:text-lg xl:text-xl'> Una visión holística sobre como acercarnos al Bienestar.            </h3>
-                        </div>
-
-                            <h4 className='mb-10 text-white text-5xl mr-48 '>Un ciclo de Encuentros en los que vamos reconociendo que cosas nos generan estrés, como interpretamos la realidad según nuestros pensamientos, y como ello nos afecta a nivel físico, mental y emocional. Desde la toma de conciencia, del poder de asumirnos creadores y responsables de nuestra realidad.</h4>
-                        </div>
-                       
-                        <div className='flex   row-span-1'>
-                            <ul className="steps w-screen steps-vertical lg:steps-horizontal">
-                                <li className="step step-primary violeta text-white">
-                                    <div> 
-                                        <h5>Charla consciente </h5> 
-                                        <h6>fdsafds</h6> 
-                                    </div> 
-                                </li>
-                                <li className="step step-primary text-white"> 
-                                    <div> 
-                                        <h5>Movimientos y respiración consciente </h5> 
-                                        <h6>fdsafds</h6> 
-                                    </div>
-                                </li>
-                                <li className="step text-white">
-                                    <div> 
-                                        <h5>Aromas naturales </h5> 
-                                        <h6>fdsafds</h6> 
-                                    </div>
-                                </li>
-                                <li className="step text-white"> 
-                                    <div> 
-                                        <h5>Relajación con Cuenco sonoro.  </h5> 
-                                        <h6>fdsafds</h6> 
-                                    </div>
-                                </li>
-                            </ul>
-                           
-                        </div>
+            <NavBar />
+            <div className='bg-violeta min-h-screen  flex flex-col xl:flex-row  relative  gap-5 pt-24 xl:pt-0  xl:pl-5' id="Bienestar">
+                <div className={` xl:max-w-1/2 xl:pt-36 text-center ${isOpen ? 'darken' : ''}`}>
+                    <h2 className='text-5xl md:text-5xl xl:text-8xl font-bold text-white xl:text-left '>Taller de Bienestar</h2>
+                    <h3 className='text-md md:text-lg lg:text-xl font-bold text-white xl:text-left mb-12'>Una visión holística sobre como acercarnos al Bienestar.   </h3>
+                    <p className='text-white text-lg xl:text-2xl mx-2 xl:text-left mb-2 xl:pb-16'>Un ciclo de Encuentros en los que vamos reconociendo que situaciones nos generan estrés, como interpretamos la realidad según nuestros pensamientos, y como ello nos afecta a nivel físico, mental y emocional. Desde la toma de conciencia, del poder de asumirnos creadores y responsables de nuestra vida.</p>
+                    <div className='xl:text-left'>
+                        <button className="px-6 py-2 bg-white text-violeta xl:text-2xl rounded-lg font-bold transform hover:-translate-y-1 transition duration-400" onClick={toggleDrawer}>
+                        Momentos
+                        </button>
                     </div>
                 </div>
+                <div className="mx-auto max-w-2xl xl:h-screen mb-12 xl:mb-0 ">
+                    <Image src={FotoBienestar} alt="pilates" className=" h-full object-cover"/>
+                </div>
+
             </div>
+           
+
+
+
+
+            {isOpen && (
+    <div className="fixed inset-0 flex justify-center items-center z-20">
+        <div className="fixed inset-0 bg-black bg-opacity-50" onClick={closeDrawer}></div>
+        <div ref={drawerRef} className={`fixed inset-x-0 bottom-0 w-full bg-white rounded-t-2xl overflow-hidden transition-transform duration-500 ease-in-out transform ${isOpen ? 'translate-y-0' : 'translate-y-full'}`} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+            <div className="p-4">
+                <div className="flex items-center justify-between mb-4"> {/* Contenedor flex para alinear elementos */}
+                    <h3 className="text-2xl lg:text-5xl font-bold text-violeta mt-4">Momentos</h3>
+                    <button className="text-violeta" onClick={closeDrawer}><IoClose size={30} /></button>
+                </div>
+                <div className="text-violeta text-center  grid grid-cols-2 gap-4">
+                    <div className="p-4 flex flex-col justify-center items-center gap-2">
+                        < TfiThought className="text-violeta" size={40} />
+                        <h4 className='text-sm lg:text-xl'>Pensamientos y emociones</h4>
+                        <h5 className="text-xs xl:text-lg "> Auto observación. <br/> Identificar pensamientos y creencias limitantes. <br/> Reconocer y gestionar emociones.  </h5>
+                    </div>
+                    <div className="p-4 flex flex-col justify-center items-center gap-2">
+                        <GiAwareness className="text-violeta" size={40} />
+                        <h4 className='text-sm lg:text-xl'>  Movimientos y respiración consciente</h4>
+                        <h5 className="text-xs xl:text-lg"> Reconocer sensaciones y liberar tensiones <br/> Conectar con el cuerpo <br/> Explorar, escuchando sus mensajes.</h5>
+                    </div>
+                    <div className="p-4 flex flex-col justify-center items-center gap-2">
+                        < FaLeaf className="text-violeta" size={40} />
+                        <h4 className='text-sm lg:text-xl'>Aromas naturales</h4> 
+                        <h5 className="text-xs xl:text-lg"> acompañan al equilibrio emocional, a cambiar estados de ánimo. </h5>
+                    </div>
+                    <div className="p-4 flex flex-col justify-center items-center gap-2">
+                        <TbDogBowl className="text-violeta" size={40} />
+                        <h4 className='text-sm lg:text-xl'>Relajación con Cuenco sonoro.</h4>
+                        <h5 className="text-xs xl:text-lg">Induce a la relajación profunda. Regula ansiedad, el estrés<br /> Aporta claridad mental, da sensación de paz y bienestar.</h5>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+)}
+
+
+
         </>
     );
 }
+
+
+

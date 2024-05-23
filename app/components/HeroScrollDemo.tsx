@@ -10,10 +10,10 @@ export function HeroScrollDemo() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-4xl font-semibold text-white">
+            <h1 className="text-5xl lg:text-7xl font-bold text-white">
              Reflexiones <br />
-              <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                para dejarte pensando
+              <span className="text-5xl lg:text-7xl font-bold mt-2 leading-none">
+               para inspirarte
               </span>
             </h1>
           </>

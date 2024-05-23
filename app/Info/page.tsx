@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Ad from "../../public/ad.jpg"
+import Taller from "../../public/taller.jpeg"
 import Contacto from "../Contacto/page";
 import { FaUniversity } from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
@@ -10,7 +11,7 @@ export default function Info() {
         <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl lg:col-span-2">
             <div className="md:flex">
               <div className="md:flex-shrink-0 md:">
-                  <Image className="h-96  object-cover md:w-96" src={Ad} alt="Foto de la persona" />
+                  <Image className="h-96  object-cover md:w-96" src={Taller} alt="Foto de la persona" />
               </div>
               <div className="p-8">
                   <div className="block mt-1 text-2xl leading-tight font-semibold text-violetaoscuro">Andrea</div>

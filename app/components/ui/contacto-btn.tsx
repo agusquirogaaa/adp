@@ -73,25 +73,25 @@ export const Contact = () => {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="mb-4 rounded-xl shadow-2xl bg-white   flex flex-col overflow-hidden mx-4 md:mx-0"
+            className="mb-4 rounded-xl shadow-2xl bg-white border border-white  flex flex-col overflow-hidden mx-4 md:mx-0"
           >
-            <div className="p-4 bg-violeta ">
-              <h2 className="text-zinc-200 font-bold text-sm md:text-xl ">
+            <div className="p-4 bg-violeta  ">
+              <h2 className="text-white font-bold text-sm md:text-xl ">
                 Lleva tus ideas a la realidad 👇
               </h2>
-              <small className="hidden md:block text-xs text-zinc-400 mb-10 ">
+              <small className="hidden md:block text-xs text-gray-100 mb-10 ">
                 Escribinos por whatsapp
               </small>
             </div>
-            <div className="content p-6 flex flex-col bg-violetaoscuro">
-              <label className="text-sm font-normal text-zinc-400 mb-2 ">
+            <div className="content p-6 flex flex-col bg-violetaoscuro ">
+              <label className="text-sm font-normal text-gray-100 mb-2 ">
                 Mensaje
               </label>
               <textarea
                 rows={3}
                 value={message}
                 onChange={(e) => onChangeHandler(e.target.value)}
-                className="text-zinc-400 rounded-md border border-zinc-700 py-1 px-2 bg-violeta focus:outline-none focus:border-gray-400 placeholder:text-sm   mb-1"
+                className="text-gray-100 rounded-md border border-gray-100 py-1 px-2 bg-violeta focus:outline-none focus:border-gray-100 placeholder:text-sm   mb-1"
                 placeholder="Escribe tu mensaje aquí..."
               />
               <small className="h-4 min-h-4 text-red-500 font-semibold mb-4">
