@@ -12,6 +12,7 @@ import { IoClose } from "react-icons/io5";
 import { FaBrain } from "react-icons/fa";
 import { FaLungs } from "react-icons/fa";
 import { ImUnlocked } from "react-icons/im";
+import Footer from "../Footer/page";
 
 export default function Desarrollo() {
     const [isOpen, setIsOpen] = useState(false);
@@ -55,9 +56,9 @@ export default function Desarrollo() {
             <NavBar />
             <div className='bg-violeta min-h-screen  flex flex-col xl:flex-row  relative  gap-5 pt-24 xl:pt-0  xl:pl-5' id="Desarrollo">
                 <div className={` xl:max-w-1/2 xl:pt-36 text-center ${isOpen ? 'darken' : ''}`}>
-                    <h2 className='text-5xl md:text-5xl xl:text-8xl font-bold text-white xl:text-left '>Taller de Desarrollo Personal </h2>
-                    <h3 className='text-md md:text-lg lg:text-xl font-bold text-white xl:text-left mb-12'>Transformación y Conciencia   </h3>
-                    <p className='text-white text-lg xl:text-2xl mx-2 xl:text-left mb-2 xl:pb-16'>El crecimiento y desarrollo personal nos inspira y entrena en nuestro autoconocimiento profundo, para desplegar todo nuestro potencial. Empoderarte es cuestionarte todo lo que has hecho, tus creencias, tus pensamientos, tu manera de interpretar la realidad.
+                    <h2 className='text-5xl md:text-5xl xl:text-8xl font-bold text-white xl:text-left  '>Taller de Desarrollo Personal </h2>
+                    <h3 className='text-md md:text-lg lg:text-xl font-bold text-white xl:text-left mb-4 xl:mb-12'>Transformación y Conciencia   </h3>
+                    <p className='text-white text-lg xl:text-2xl mx-2 xl:text-left pb-4 xl:pb-16'>El crecimiento y desarrollo personal nos inspira y entrena en nuestro autoconocimiento profundo, para desplegar todo nuestro potencial. Empoderarte es cuestionarte todo lo que has hecho, tus creencias, tus pensamientos, tu manera de interpretar la realidad.
 El autoconocimiento es el primer paso del camino hacia tu propósito. Conecta con tu pasión, vive una vida plena y consciente.
 
  </p>
@@ -67,11 +68,12 @@ El autoconocimiento es el primer paso del camino hacia tu propósito. Conecta co
                         </button>
                     </div>
                 </div>
-                <div className="mx-auto max-w-2xl xl:h-screen mb-12 xl:mb-0 ">
-                    <Image src={FotoBienestar} alt="pilates" className=" h-full object-cover"/>
+                <div className="mx-2 xl:mx-auto max-w-2xl xl:h-screen mb-12 xl:mb-0 ">
+                    <Image src={FotoBienestar} alt="pilates" className=" h-full object-cover rounded-xl xl:rounded-none"/>
                 </div>
 
             </div>
+            <Footer />
            
 
 

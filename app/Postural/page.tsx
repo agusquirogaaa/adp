@@ -50,21 +50,22 @@ export default function Pilates() {
     return (
         <>
             <NavBar />
-            <div className='bg-gray-100 min-h-screen  flex flex-col xl:flex-row  relative  gap-5 xl:pl-5' id="Postural">
-                <div className="mx-auto max-w-2xl xl:h-screen mb-12 xl:mb-0 order-2 xl:order-1 ">
-                    <Image src={FotoPostural} alt="gim" className='h-full object-cover'/>
+            <div className='bg-violeta min-h-screen  flex flex-col xl:flex-row  relative  gap-5 pt-24 xl:pt-0  xl:pl-5' id="Postural">
+                <div className="mx-2 xl:mx-auto max-w-2xl xl:h-screen mb-12 xl:mb-0 order-2 xl:order-1 ">
+                    <Image src={FotoPostural} alt="gim" className='h-full object-cover rounded-xl xl:rounded-none'/>
                 </div>
                 <div className={`xl:max-w-1/2 xl:pt-36 text-center  order-1 md:order-2  ${isOpen ? 'darken' : ''}`}>
-                    <h2 className='text-5xl md:text-5xl xl:text-8xl font-bold text-violeta xl:text-left mb-12'>Gimnasia Postural <br/>Elongación Postural Global</h2>
-                    <p className='text-violeta text-lg xl:text-2xl mx-2 xl:text-left mb-2 xl:pb-16'> Corregir posturas viciadas y erróneas, a través de ejercicios preventivos y ergonómicos para evitar consecuencias como fatiga, dolores musculares, lesiones. Y proyectar una vida saludable e independiente.
+                    <h2 className='text-5xl md:text-5xl xl:text-8xl font-bold text-white xl:text-left mb-4 xl:mb-12'>Gimnasia Postural <br/>Elongación Postural Global</h2>
+                    <p className='text-white text-lg xl:text-2xl mx-2 xl:text-left pb-4 xl:pb-16'> Corregir posturas viciadas y erróneas, a través de ejercicios preventivos y ergonómicos para evitar consecuencias como fatiga, dolores musculares, lesiones. Y proyectar una vida saludable e independiente.
                     Una fusión de las 2 técnicas para lograr un entrenamiento postural óptimo. Los músculos no trabajan de forma aislada, están interconectados, creando cadenas musculares. Estas redistribuyen la fuerza a través de las diferentes regiones del cuerpo, mediante el tejido fascial, ya sea para mantener una postura o realizar un gesto de manera coordinada. </p>
                     <div className="xl:text-left">
-                     <button className="px-6 py-2 bg-violeta text-white xl:text-2xl rounded-lg font-bold transform hover:-translate-y-1 transition duration-400" onClick={toggleDrawer}>
+                     <button className="px-6 py-2 bg-white text-violeta xl:text-2xl rounded-lg font-bold transform hover:-translate-y-1 transition duration-400" onClick={toggleDrawer}>
                         Beneficios de la actividad
                         </button>
                     </div>
                 </div>
             </div>
+            <Footer />
             
 
 

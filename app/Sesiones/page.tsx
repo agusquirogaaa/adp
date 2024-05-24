@@ -18,7 +18,7 @@ import { MdOutlineCenterFocusWeak } from "react-icons/md";
 
 
 
-export default function Pilates() {
+export default function Sesiones() {
     const [isOpen, setIsOpen] = useState(false);
     const [startY, setStartY] = useState(0);
     const drawerRef = useRef<HTMLDivElement>(null);
