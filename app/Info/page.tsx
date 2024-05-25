@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Ad from "../../public/ad.jpg"
-import Taller from "../../public/quiensoy.jpg"
+import Ad from "../../public/ad.webp"
+import Taller from "../../public/quiensoy.webp"
 import Contacto from "../Contacto/page";
 import { FaUniversity } from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
@@ -112,7 +112,7 @@ export default function Info() {
             </li>
             <li>
               <hr/>
-              <div className="timeline-start timeline-box bg-white text-violetaoscuro border-none text-sm text-center">Biocodificación</div>
+              <div className="timeline-start timeline-box bg-white text-violetaoscuro border-none text-sm text-center">Biodecodificación</div>
               <div className="timeline-middle">
                   < PiStudentBold  className="w-5 h-5 text-violetaoscuro" /> 
               </div>

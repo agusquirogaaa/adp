@@ -77,7 +77,7 @@ export const Contact = () => {
           >
             <div className="p-4 bg-violeta  ">
               <h2 className="text-white font-bold text-sm md:text-xl ">
-                Lleva tus ideas a la realidad 👇
+                Iniciá tu camino de bienestar 👇
               </h2>
               <small className="hidden md:block text-xs text-gray-100 mb-10 ">
                 Escribinos por whatsapp

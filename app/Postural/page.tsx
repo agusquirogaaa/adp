@@ -1,7 +1,7 @@
 "use client"
 import NavBar from "../NavBar/page";
 import Image from "next/image";
-import FotoPostural from "../../public/gimpost.jpg"
+import FotoPostural from "../../public/gimpost.webp"
 import { GrUpgrade } from "react-icons/gr";
 import { GiStrong } from "react-icons/gi";
 import { MdDoNotStep } from "react-icons/md";

@@ -2,7 +2,7 @@
 
 import NavBar from "../NavBar/page";
 import Image from "next/image";
-import FotoBienestar from "../../public/cuenco.jpg"
+import FotoBienestar from "../../public/cuenco.webp"
 import { useState, useRef, useEffect } from 'react';
 import { TfiThought } from "react-icons/tfi";
 import { GiAwareness } from "react-icons/gi";
@@ -84,22 +84,22 @@ export default function Bienestar() {
                 <div className="p-2 md:p-4 flex flex-col justify-center items-center gap-1">
                     <TfiThought className="text-violeta" size={32} />
                     <h4 className='text-sm lg:text-lg'>Pensamientos y emociones</h4>
-                    <h5 className="text-sm xl:text-md text-verde">Auto observación. Identificar pensamientos y creencias limitantes. Reconocer y gestionar emociones.</h5>
+                    <h5 className="text-sm xl:text-md text-gray-600">Auto observación. Identificar pensamientos y creencias limitantes. Reconocer y gestionar emociones.</h5>
                 </div>
                 <div className="p-2 md:p-4 flex flex-col justify-center items-center gap-1">
                     <GiAwareness className="text-violeta" size={32} />
                     <h4 className='text-sm lg:text-lg'>Movimientos y respiración consciente</h4>
-                    <h5 className="text-sm xl:text-md text-verde">Reconocer sensaciones y liberar tensiones. Conectar con el cuerpo. Explorar, escuchando sus mensajes.</h5>
+                    <h5 className="text-sm xl:text-md text-gray-600">Reconocer sensaciones y liberar tensiones. Conectar con el cuerpo. Explorar, escuchando sus mensajes.</h5>
                 </div>
                 <div className="p-2 md:p-4 flex flex-col justify-center items-center gap-1">
                     <FaLeaf className="text-violeta" size={32} />
                     <h4 className='text-sm lg:text-lg'>Aromas naturales</h4> 
-                    <h5 className="text-sm xl:text-md text-verde">Acompañan al equilibrio emocional, a cambiar estados de ánimo.</h5>
+                    <h5 className="text-sm xl:text-md text-gray-600">Acompañan al equilibrio emocional, a cambiar estados de ánimo.</h5>
                 </div>
                 <div className="p-2 md:p-4 flex flex-col justify-center items-center gap-1">
                     <TbDogBowl className="text-violeta" size={32} />
                     <h4 className='text-sm lg:text-lg'>Relajación con Cuenco sonoro</h4>
-                    <h5 className="text-sm xl:text-md text-verde">Induce a la relajación profunda. Regula ansiedad, el estrés. Aporta claridad mental, da sensación de paz y bienestar.</h5>
+                    <h5 className="text-sm xl:text-md text-gray-600">Induce a la relajación profunda. Regula ansiedad, el estrés. Aporta claridad mental, da sensación de paz y bienestar.</h5>
                 </div>
             </div>
         </div>

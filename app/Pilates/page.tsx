@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image';
-import FotoPilates from '../../public/pilates.jpg';
+import FotoPilates from '../../public/pilates.webp';
 import NavBar from '../NavBar/page';
 import { GrUpgrade } from "react-icons/gr";
 import { GiStrong } from "react-icons/gi";

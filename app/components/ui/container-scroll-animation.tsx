@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
-import FondoScroll from "../../../public/reflexiones.jpg"
+import FondoScroll from "../../../public/reflexiones.webp"
 import Image from "next/image";
 export const ContainerScroll = ({
   titleComponent,

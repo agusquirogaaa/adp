@@ -1,10 +1,10 @@
 import Image from "next/image";
-import FotoPilates from "../../public/pilates.jpg";
-import FotoTallerBienestar from "../../public/cuenco.jpg";
-import FotoTallerDesarrollo from "../../public/desarrollo.jpg";
-import SH from "../../public/sesiones.jpg";
-import FotoProductos from "../../public/aromas2.jpg";
-import GimPost from "../../public/gimpost.jpg"
+import FotoPilates from "../../public/pilates.webp";
+import FotoTallerBienestar from "../../public/cuenco.webp";
+import FotoTallerDesarrollo from "../../public/desarrollo.webp";
+import SH from "../../public/sesiones.webp";
+import FotoProductos from "../../public/aromas2.webp";
+import GimPost from "../../public/gimpost.webp"
 import Link from "next/link";
 import { FollowingPointerDemo } from "../components/FollowingPointerDemo";
 export default function Servicios() {

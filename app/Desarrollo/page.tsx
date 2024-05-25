@@ -2,7 +2,7 @@
 
 import NavBar from "../NavBar/page";
 import Image from "next/image";
-import FotoBienestar from "../../public/desarrollo.jpg"
+import FotoBienestar from "../../public/desarrollo.webp"
 import { useState, useRef, useEffect } from 'react';
 import { TfiThought } from "react-icons/tfi";
 import { GiAwareness } from "react-icons/gi";

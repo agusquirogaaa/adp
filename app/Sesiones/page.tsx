@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image';
-import FotoSesiones from '../../public/sesiones.jpg';
+import FotoSesiones from '../../public/sesiones.webp';
 import NavBar from '../NavBar/page';
 import { GrUpgrade } from "react-icons/gr";
 import { GiMeditation, GiStrong } from "react-icons/gi";

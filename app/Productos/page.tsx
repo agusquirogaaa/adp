@@ -1,16 +1,16 @@
 import Footer from "../Footer/page";
 import NavBar from "../NavBar/page";
 import Image from "next/image";
-import Foto1 from "../../public/productos.jpeg"
-import Foto2 from "../../public/lavandas.jpeg"
-import Foto3 from "../../public/kit.jpeg"
-import Foto4 from "../../public/tallerdearomaterapia.jpeg"
-import Aromas1 from "../../public/ar1.jpg"
-import Aromas2 from "../../public/ar2.jpg"
-import Aromas3 from "../../public/ar3.jpg"
-import Lav1 from "../../public/lav1.jpg"
-import Lav2 from "../../public/lav2.jpg"
-import Lav3 from "../../public/lav3.jpg"
+import Foto1 from "../../public/productos.webp"
+import Foto2 from "../../public/lavandas.webp"
+import Foto3 from "../../public/kit.webp"
+import Foto4 from "../../public/tallerdearomaterapia.webp"
+import Aromas1 from "../../public/ar1.webp"
+import Aromas2 from "../../public/ar2.webp"
+import Aromas3 from "../../public/ar3.webp"
+import Lav1 from "../../public/lav1.webp"
+import Lav2 from "../../public/lav2.webp"
+import Lav3 from "../../public/lav3.webp"
 import Link from "next/link";
 
 

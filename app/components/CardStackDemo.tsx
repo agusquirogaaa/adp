@@ -72,7 +72,7 @@ const CARDS = [
   },
   {
     id: 4,
-    name: " Eduard Bach",
+    name: " Edward Bach",
     
     content: (
       <p>

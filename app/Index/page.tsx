@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Ad from "../../public/ad.jpg"
+import Ad from "../../public/ad.webp"
 import Image from 'next/image';
 
 export default function Index() {
