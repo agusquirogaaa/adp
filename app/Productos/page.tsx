@@ -11,6 +11,9 @@ import Aromas3 from "../../public/ar3.jpg"
 import Lav1 from "../../public/lav1.jpg"
 import Lav2 from "../../public/lav2.jpg"
 import Lav3 from "../../public/lav3.jpg"
+import Link from "next/link";
+
+
 export default function Productos () {
     return (
         <>
@@ -32,7 +35,9 @@ Cremas naturales, con aceites vegetales, esenciales y tinturas madres.</p>
                                 <Image  src={Aromas2} className="w-14 h-14 rounded-full mr-2" alt="Imagen circular 2" />
                                 <Image  src={Aromas3} className="w-14 h-14 rounded-full" alt="Imagen circular 3" />
                             </div>
-                            <button className="my-10 bg-violeta text-white px-4 py-2 rounded hover:bg-verde">Contactame</button>
+                            <Link href="https://wa.me/1134087446?text=Hola%20Andrea,%20quiero%20iniciar%20el%20camino%20hacia%20el%20bienestar"  target='_blank' rel="noopener noreferrer"> 
+                                <button className="my-10 bg-violeta text-white px-4 py-2 rounded hover:bg-verde">Contactame</button>
+                            </Link>
                             </div>
                     </div>
                     <div className="bg-violeta xs:p-2 xl:p-0 flex flex-col lg:flex-row justify-center items-center pb-10">
@@ -47,7 +52,9 @@ Cremas naturales, con aceites vegetales, esenciales y tinturas madres.</p>
                                 <Image  src={Lav2} className="w-14 h-14 rounded-full mr-2" alt="Imagen circular 2" />
                                 <Image  src={Lav3} className="w-14 h-14 rounded-full" alt="Imagen circular 3" />
                             </div>
-                            <button className="my-10 bg-verde text-white px-4 py-2 rounded hover:bg-gray-600 ">Contactame</button>
+                            <Link href="https://wa.me/1134087446?text=Hola%20Andrea,%20quiero%20iniciar%20el%20camino%20hacia%20el%20bienestar"  target='_blank' rel="noopener noreferrer"> 
+                                 <button className="my-10 bg-verde text-white px-4 py-2 rounded hover:bg-gray-600 ">Contactame</button>
+                            </Link>
                             </div>
                     </div>
                     <div className="bg-white xs:p-2 xl:p-0 flex flex-col lg:flex-row justify-center items-center pb-10">
@@ -60,7 +67,9 @@ Cremas naturales, con aceites vegetales, esenciales y tinturas madres.</p>
 Presentación en caja de cartón.
 Consulta nuestros Kits, Ceremonia del Té, </p>
                         
-                            <button className="my-10 bg-violeta text-white px-4 py-2 rounded hover:bg-verde">Contactame</button>
+                            <Link href="https://wa.me/1134087446?text=Hola%20Andrea,%20quiero%20iniciar%20el%20camino%20hacia%20el%20bienestar"  target='_blank' rel="noopener noreferrer"> 
+                                <button className="my-10 bg-violeta text-white px-4 py-2 rounded hover:bg-verde">Contactame</button>
+                            </Link>
                             </div>
                     </div>
                     <div className="bg-violeta xs:p-2 xl:p-0 flex flex-col lg:flex-row justify-center items-center pb-10">
@@ -70,8 +79,9 @@ Consulta nuestros Kits, Ceremonia del Té, </p>
                             <div className="xl:w-1/2 mx-2 xl:mx-0 xs:ml-0 xl:ml-4 flex flex-col justify-center items-center">
                             <h2 className="text-2xl xl:text-5xl font-semibold text-center text-white mt-5 mb-10 xl:mt-0">Taller de Aromaterapia</h2>
                             <p className="text-white text-center mt-2 xl:mt-0"> Proximamente</p>
-                            
-                            <button className="my-10 bg-verde text-white px-4 py-2 rounded hover:bg-gray-600">Contactame</button>
+                            <Link href="https://wa.me/1134087446?text=Hola%20Andrea,%20quiero%20iniciar%20el%20camino%20hacia%20el%20bienestar"  target='_blank' rel="noopener noreferrer"> 
+                                 <button className="my-10 bg-verde text-white px-4 py-2 rounded hover:bg-gray-600 ">Contactame</button>
+                            </Link>
                             </div>
                     </div>
 
