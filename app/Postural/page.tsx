@@ -50,8 +50,8 @@ export default function Pilates() {
     return (
         <>
             <NavBar />
-            <div className='bg-violeta min-h-screen  flex flex-col xl:flex-row  relative  gap-5 pt-24 xl:pt-0  xl:pl-5' id="Postural">
-                <div className="mx-2 xl:mx-auto max-w-2xl xl:h-screen mb-12 xl:mb-0 order-2 xl:order-1 ">
+            <div className='bg-violeta min-h-screen  flex flex-col xl:flex-row justify-center items-center xl:items-start  relative  gap-5 pt-24 xl:pt-0  xl:pl-5' id="Postural">
+                <div className="xl:mx-auto max-w-2xl xl:h-screen mb-12 xl:mb-0 order-2 xl:order-1 ">
                     <Image src={FotoPostural} alt="gim" className='h-full object-cover rounded-xl xl:rounded-none'/>
                 </div>
                 <div className={`xl:max-w-1/2 xl:pt-36 text-center  order-1 md:order-2  ${isOpen ? 'darken' : ''}`}>
@@ -80,7 +80,7 @@ export default function Pilates() {
                     <h3 className="text-2xl lg:text-5xl font-bold text-violeta mt-4">Beneficios</h3>
                     <button className="text-violeta" onClick={closeDrawer}><IoClose size={30} /></button>
                 </div>
-                <div className="text-violeta text-center lg:text-left grid lg:grid-cols-3 gap-4">
+                <div className="text-violeta text-center  grid lg:grid-cols-3 gap-4">
                     <div className="p-4 flex flex-col justify-center items-center gap-2">
                         <GrUpgrade className="text-violeta" size={40} />
                         <h4 className='text-sm lg:text-lg'>Mejora la Flexibilidad</h4>

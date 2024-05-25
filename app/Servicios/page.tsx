@@ -27,7 +27,7 @@ export default function Servicios() {
             </figure>
             <div className="card-body hover:shadow-xl">
               <h2 className="card-title h-[3.5rem] ">Pilates con elementos</h2>
-              <p>Clases presenciales y online. Grupales e individuales.</p>
+              <p>Clases presenciales y online. <br/> Grupales e individuales.</p>
               <div className="card-actions justify-end">
                 <Link href="/Pilates">
                   <button className="px-4 py-2 rounded-md border border-neutral-300 bg-violeta text-white text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
@@ -51,7 +51,7 @@ export default function Servicios() {
             </figure>
             <div className="card-body hover:shadow-xl">
               <h2 className="card-title h-[3.5rem]">Gimnasia postural <br/> Elongación postural global</h2>
-              <p>Clases presenciales y online. Grupales e individuales.</p>
+              <p>Clases presenciales y online.<br/> Grupales e individuales.</p>
               <div className="card-actions justify-end">
                 <Link href="/Postural">
                   <button className="px-4 py-2 rounded-md border border-neutral-300 bg-violeta text-white text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">

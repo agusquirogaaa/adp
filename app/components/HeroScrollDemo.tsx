@@ -28,7 +28,8 @@ export function HeroScrollDemo() {
   );
 }
 
-export const users = [
+{/*
+  export const users = [
   {
     name: "Manu Arora",
     designation: "Founder, Algochurn",
@@ -144,3 +145,5 @@ export const users = [
     badge: "Developer",
   },
 ];
+
+*/}

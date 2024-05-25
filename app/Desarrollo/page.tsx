@@ -2,7 +2,7 @@
 
 import NavBar from "../NavBar/page";
 import Image from "next/image";
-import FotoBienestar from "../../public/sesiones.jpg"
+import FotoBienestar from "../../public/desarrollo.jpg"
 import { useState, useRef, useEffect } from 'react';
 import { TfiThought } from "react-icons/tfi";
 import { GiAwareness } from "react-icons/gi";
@@ -68,7 +68,7 @@ El autoconocimiento es el primer paso del camino hacia tu propósito. Conecta co
                         </button>
                     </div>
                 </div>
-                <div className="mx-2 xl:mx-auto max-w-2xl xl:h-screen mb-12 xl:mb-0 ">
+                <div className=" xl:mx-auto max-w-2xl xl:h-screen mb-12 xl:mb-0 ">
                     <Image src={FotoBienestar} alt="pilates" className=" h-full object-cover rounded-xl xl:rounded-none"/>
                 </div>
 

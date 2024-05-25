@@ -58,7 +58,7 @@ export default function Pilates() {
     return (
         <>
             <NavBar />
-            <div className='bg-violeta min-h-screen  flex flex-col xl:flex-row  relative  gap-5 pt-24 xl:pt-0  xl:pl-5' id="Pilates">
+            <div className='bg-violeta min-h-screen  flex flex-col xl:flex-row justify-center items-center xl:items-start relative  gap-5 pt-24 xl:pt-0  xl:pl-5' id="Pilates">
                 <div className={` xl:max-w-1/2 xl:pt-36 text-center ${isOpen ? 'darken' : ''}`}>
                     <h2 className='text-5xl md:text-5xl xl:text-8xl font-bold text-white xl:text-left mb-4 xl:mb-12'>Pilates con elementos</h2>
                     <p className='text-white text-lg xl:text-2xl mx-2 xl:text-left pb-2 xl:pb-16'> El método proporciona una experiencia completa de bienestar físico y mental, que favorece la postura adecuada, la conciencia corporal, la flexibilidad, la coordinación y el fortalecimiento muscular. A través de la práctica, logramos alcanzar una correcta alineación, prevenir dolores de espalda, fortalecer el núcleo y los músculos, mejorar la circulación sanguínea, reducir el estrés y favorecer la relajación. Conlleva al equilibrio óptimo entre cuerpo y mente, promoviendo una vida saludable y plena.</p>
@@ -68,7 +68,7 @@ export default function Pilates() {
                         </button>
                     </div>
                 </div>
-                <div className=" mx-2 xl:mx-auto max-w-2xl xl:h-screen mb-12 xl:mb-0 ">
+                <div className=" max-w-2xl xl:h-screen mb-12 xl:mb-0 ">
                     <Image src={FotoPilates} alt="pilates" className=" h-full object-cover rounded-xl xl:rounded-none"/>
                 </div>
 

@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-violetaoscuro text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="flex flex-col xl:flex-row items-center justify-between">
           <div className="flex items-center mb-4 md:mb-0">
             <Image src={Logo} alt="Logo" className="h-12 w-auto" />
             <span className="text-xl ml-2">Aires de Pausa </span>
@@ -28,16 +28,16 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} Skyward Digital Solutions. Todos los derechos reservados.</p>
         </div>
         <div className="flex items-center justify-center mt-12 gap-4">
-            <a href="https://twitter.com/tucuenta" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
+            <a href="https://wa.me/1134087446?text=Hola%20Andrea,%20quiero%20iniciar%20el%20camino%20hacia%20el%20bienestar" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
               <FaWhatsapp size={28} />
             </a>
-            <a href="https://www.instagram.com/tucuenta" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
+            <a href="https://www.instagram.com/airesdepausa.af" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
               <FaInstagram size={28} />
             </a>
-            <a href="https://www.linkedin.com/in/tucuenta" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
+            <a href="https://www.facebook.com/airesdepausa.af" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
               <FaFacebookSquare size={28} />
             </a>
-            <a href="https://github.com/tucuenta" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
+            <a href="mailto:airesdepausa.af@gmail.com?subject=Despertar%20la%20conciencia" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
               <CiMail size={28} />
             </a>
           </div>

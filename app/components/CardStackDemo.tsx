@@ -32,39 +32,51 @@ export const Highlight = ({
 const CARDS = [
   {
     id: 0,
-    name: "Manu Arora",
+    name: "Joe Dispenza",
    
     content: (
       <p>
-        These cards are amazing, <Highlight>I want to use them</Highlight> in my
-        project. Framer motion is a godsend ngl tbh fam 🙏
+        Cuando tus pensamientos, y acciones son congruentes, vas a tener poder interior para romper los patrones mentales y construir nuevos.
       </p>
     ),
   },
   {
     id: 1,
-    name: "Elon Musk",
+    name: "",
    
     content: (
       <p>
-        I dont like this Twitter thing,{" "}
-        <Highlight>deleting it right away</Highlight> because yolo. Instead, I
-        would like to call it <Highlight>X.com</Highlight> so that it can easily
-        be confused with adult sites.
+        Los milagros sí existen y no son más que un cambio de percepción
       </p>
     ),
   },
   {
     id: 2,
-    name: "Tyler Durden",
+    name: " Enric Crobera",
     
     content: (
       <p>
-        The first rule of
-        <Highlight>Fight Club</Highlight> is that you do not talk about fight
-        club. The second rule of
-        <Highlight>Fight club</Highlight> is that you DO NOT TALK about fight
-        club.
+        Cada instante de tu vida es una posibilidad de eleccion.
+      </p>
+    ),
+  },
+  {
+    id: 3,
+    name: "",
+    
+    content: (
+      <p>
+        No vemos la vida como es, la vemos como somos
+      </p>
+    ),
+  },
+  {
+    id: 4,
+    name: " Eduard Bach",
+    
+    content: (
+      <p>
+        Trate la causa, no el efecto.
       </p>
     ),
   },

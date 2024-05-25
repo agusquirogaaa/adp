@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Ad from "../../public/ad.jpg"
-import Taller from "../../public/taller.jpeg"
+import Taller from "../../public/quiensoy.jpg"
 import Contacto from "../Contacto/page";
 import { FaUniversity } from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
@@ -15,7 +15,7 @@ export default function Info() {
                   <Image className="h-96  object-cover md:w-96 rounded-xl" src={Taller} alt="Foto de la persona" />
               </div>
               <div className="p-8">
-                  <div className="block mt-1 text-2xl leading-tight font-semibold text-violetaoscuro">Andrea</div>
+                  <div className="block mt-1 text-2xl leading-tight font-semibold text-violetaoscuro"> Soy Andrea</div>
                   <p className="mt-2 text-gray-600">Te inspiro en el camino hacia el bienestar, a desarrollar hábitos saludables, generar una vida consciente, con propósito, en coherencia, para conectar con tu esencia y despertar tu potencial uniendo el movimiento con el autoconocimiento, hasta alcanzar la transformación personal.</p>
                   <p className="text-gray-600"> Mi trabajo es guiarte brindándote herramientas de: </p>
                   <div className="text-gray-600 space-y-4">
@@ -47,6 +47,7 @@ export default function Info() {
               </div>
             </div>
             <div className="text-gray-600  mt-2 px-8 pb-8 leading-[2rem]"> 
+              <h5 className="block mt-1 text-2xl leading-tight font-semibold text-violetaoscuro"> Acerca de mi</h5>
               <p> Me formé como Profesora de Educación Física en los años ´90, me encantan los deportes, el movimiento, la naturaleza y la vida saludable.   <br/>                                                                                   
                   Comencé el recorrido del mundo holístico iniciándome en Reiki, lo cual fue el primer eslabón hacia el comienzo de mi “Despertar de consciencia”. Desde allí me sumergí en un intenso viaje de autodescubrimiento y transformación personal. <br />
                   En el 2009 cree mi marca de AROMATERAPIA “Aromas Terrenales, volver a lo natural”. <br/> 
@@ -64,7 +65,7 @@ export default function Info() {
 
         <ul className="timeline timeline-vertical mt-24 lg:col-span-1 bg-gray-100 ">
             <li>
-              <div className="timeline-start timeline-box bg-white text-violetaoscuro border-none text-xs text-center">Profesorado de Educación Física</div>
+              <div className="timeline-start timeline-box bg-white text-violetaoscuro border-none text-sm text-center">Profesorado de Educación Física</div>
               <div className="timeline-middle ">
                 <PiStudentBold className="w-5 h-5 text-violetaoscuro" />
               </div>
@@ -75,12 +76,12 @@ export default function Info() {
               <div className="timeline-middle">
                   <PiStudentBold className="w-5 h-5 text-violetaoscuro" />  
               </div>
-              <div className="timeline-end timeline-box bg-white text-violetaoscuro border-none text-xs text-center">Reiki</div>
+              <div className="timeline-end timeline-box bg-white text-violetaoscuro border-none text-sm text-center">Reiki</div>
               <hr/>
             </li>
             <li>
               <hr/>
-              <div className="timeline-start timeline-box bg-white text-violetaoscuro border-none text-xs text-center">Aromaterapia</div>
+              <div className="timeline-start timeline-box bg-white text-violetaoscuro border-none text-sm text-center">Aromaterapia</div>
               <div className="timeline-middle">
                   <PiStudentBold className="w-5 h-5 text-violetaoscuro" />   
               </div>
@@ -91,16 +92,32 @@ export default function Info() {
               <div className="timeline-middle">
                   < PiStudentBold  className="w-5 h-5 text-violetaoscuro" />    
               </div>
-              <div className="timeline-end timeline-box bg-white text-violetaoscuro border-none text-xs text-center">Terapia Holística</div>
+              <div className="timeline-end timeline-box bg-white text-violetaoscuro border-none text-sm text-center">Terapia Holística</div>
               <hr/>
             </li>
             <li>
               <hr/>
-              <div className="timeline-start timeline-box bg-white text-violetaoscuro border-none text-xs text-center">Instructora</div>
+              <div className="timeline-start timeline-box bg-white text-violetaoscuro border-none text-sm text-center">Instructora de pilates</div>
               <div className="timeline-middle">
                   < PiStudentBold  className="w-5 h-5 text-violetaoscuro" /> 
               </div>
             </li>
+            <li>
+              <hr/>
+              <div className="timeline-middle">
+                  < PiStudentBold  className="w-5 h-5 text-violetaoscuro" />    
+              </div>
+              <div className="timeline-end timeline-box bg-white text-violetaoscuro border-none text-sm text-center">Flores de Bach</div>
+              <hr/>
+            </li>
+            <li>
+              <hr/>
+              <div className="timeline-start timeline-box bg-white text-violetaoscuro border-none text-sm text-center">Biocodificación</div>
+              <div className="timeline-middle">
+                  < PiStudentBold  className="w-5 h-5 text-violetaoscuro" /> 
+              </div>
+            </li>
+            
           </ul>      
     </div>
     <Contacto/>  
