@@ -9,8 +9,7 @@ import Foto3 from "../../public/recortearomas.webp";
 import Foto4 from "../../public/manzanillas.webp";
 import Foto5 from "../../public/rosas.webp";
 import Foto6 from "../../public/sahumar.webp";
-import Foto7 from "../../public/grupoencuentros.webp";
-import Foto8 from "../../public/taller.webp";
+import Foto7 from "../../public/taller.webp";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
@@ -72,11 +71,6 @@ export default function Fotos() {
           </div>
           <div className="carousel-item relative">
             <Image src={Foto7} className="w-full h-full rounded-xl object-cover" alt="..." />
-            <FaAngleLeft className="absolute top-1/2 left-0 transform -translate-y-1/2 text-white text-3xl cursor-pointer hover:text-gray-300" onClick={() => sliderRef.current?.slickPrev()} />
-            <FaAngleRight className="absolute top-1/2 right-0 transform -translate-y-1/2 text-white text-3xl cursor-pointer hover:text-gray-300" onClick={() => sliderRef.current?.slickNext()} />
-          </div>
-          <div className="carousel-item relative">
-            <Image src={Foto8} className="w-full h-full rounded-xl object-cover" alt="..." />
             <FaAngleLeft className="absolute top-1/2 left-0 transform -translate-y-1/2 text-white text-3xl cursor-pointer hover:text-gray-300" onClick={() => sliderRef.current?.slickPrev()} />
             <FaAngleRight className="absolute top-1/2 right-0 transform -translate-y-1/2 text-white text-3xl cursor-pointer hover:text-gray-300" onClick={() => sliderRef.current?.slickNext()} />
           </div>

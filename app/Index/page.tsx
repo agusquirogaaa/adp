@@ -11,7 +11,7 @@ export default function Index() {
                     <h1 className='text-5xl xl:text-8xl text-white xs:mx-2  lg:mx-0  mt-5 lg:text-left'>
                         Aires de <span className='text-verde lg:text-left'>Pausa</span>
                     </h1>
-                    <h3 className='text-xl xl:text-2xl text-white mt-2 mx-2 lg:mx-0 max-w-xl lg:text-left'> Te brindo herramientas para despertar la conciencia y potenciar tu bienestar a través del movimiento y las terapias holísticas</h3>
+                    <h3 className='text-xl xl:text-2xl text-white mt-2 mx-2 lg:mx-0 max-w-xl lg:text-left'> Te brindo herramientas para despertar la consciencia y potenciar tu bienestar a través del movimiento y las terapias holísticas</h3>
                     <div className='mb-5 mt-5 lg:text-left'>
                         <Link href="https://wa.me/+5491134087446?text=Hola%20Andrea,%20quiero%20iniciar%20el%20camino%20hacia%20el%20bienestar"  target='_blank' rel="noopener noreferrer"> 
                         <button className="px-8 py-3 bg-verde text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400 inline-block">
