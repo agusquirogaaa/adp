@@ -66,7 +66,7 @@ export default function Info() {
         <ul className="timeline timeline-vertical mt-24 lg:col-span-1 bg-gray-100 ">
             <li>
               <div className="timeline-start timeline-box bg-white text-violetaoscuro border-none text-sm text-center">Profesorado de Educación Física</div>
-              <div className="timeline-middle ">
+              <div className="timeline-middle">
                 <PiStudentBold className="w-5 h-5 text-violetaoscuro" />
               </div>
               <hr/>

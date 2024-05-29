@@ -28,7 +28,7 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} Skyward Digital Solutions. Todos los derechos reservados.</p>
         </div>
         <div className="flex items-center justify-center mt-12 gap-4">
-            <a href="https://wa.me/1134087446?text=Hola%20Andrea,%20quiero%20iniciar%20el%20camino%20hacia%20el%20bienestar" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
+            <a href="https://wa.me/+5491134087446?text=Hola%20Andrea,%20quiero%20iniciar%20el%20camino%20hacia%20el%20bienestar" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">
               <FaWhatsapp size={28} />
             </a>
             <a href="https://www.instagram.com/airesdepausa.af" target="_blank" rel="noopener noreferrer" className="mx-2 text-white hover:text-violeta">

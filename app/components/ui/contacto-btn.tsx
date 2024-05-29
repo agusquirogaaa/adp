@@ -44,7 +44,7 @@ export const Contact = () => {
     }
 
     // Construct WhatsApp message link
-    const phoneNumber = "+5491138684328"; // Reemplazar con tu número de teléfono
+    const phoneNumber = "+5491134087446"; // Reemplazar con tu número de teléfono
     const whatsappMessage = encodeURIComponent(message);
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
 
