@@ -18,7 +18,7 @@ export default function Footer() {
             <a href="#Servicios" className="text-white text-decoration-none py-2 px-4 md:px-2 md:ml-4 md:mr-0 hover:text-gray-300">Servicios</a>
             <a href="#Reflexiones" className="text-white text-decoration-none py-2 px-4 md:px-2 md:ml-4 md:mr-0 hover:text-gray-300">Reflexiones</a>
             <a href="#Recursos" className="text-white text-decoration-none py-2 px-4 md:px-2 md:ml-4 md:mr-0 hover:text-gray-300">Recursos</a>
-            <a href="#Fotos" className="text-white text-decoration-none py-2 px-4 md:px-2 md:ml-4 md:mr-0 hover:text-gray-300">Fotos</a>
+            <a href="#Galeria" className="text-white text-decoration-none py-2 px-4 md:px-2 md:ml-4 md:mr-0 hover:text-gray-300">Galería</a>
             <a href="#Info" className="text-white text-decoration-none py-2 px-4 md:px-2 md:ml-4 md:mr-0 hover:text-gray-300">Quien Soy</a>
             
             </nav>

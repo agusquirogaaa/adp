@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <link rel="icon" href="../public/logo.svg" /> {/* Ruta a tu imagen favicon */}
+        <link rel="icon" href="/logo.svg" /> {/* Ruta a tu imagen favicon */}
         <title>Aires de Pausa</title> {/* Título de la pestaña del navegador */}
         <meta name="description" content="Es un espacio de bienestar donde inspiro a las personas a que tomen conciencia para que descubran su poder interior y conecten con su esencia" /> {/* Descripción para SEO */}
       </Head>

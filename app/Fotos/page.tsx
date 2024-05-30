@@ -14,7 +14,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
-export default function Fotos() {
+export default function Galeria() {
   const sliderRef = useRef<Slider | null>(null);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export default function Fotos() {
   };
 
   return (
-    <div className="min-h-screen bg-violeta py-24 flex justify-center items-center relative"> {/* Añade relative para posicionamiento relativo */}
+    <div className="min-h-screen bg-violeta py-24 flex justify-center items-center relative" id="Galeria"> {/* Añade relative para posicionamiento relativo */}
       <div className="w-full md:w-3/4 xl:w-[80vh] h-full relative"> {/* Define el ancho del carrusel */}
         <h2 className="text-bold text-5xl text-white text-center mb-5">Galería</h2>
         <Slider ref={sliderRef} {...settings} className="w-full rounded-xl relative">
