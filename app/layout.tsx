@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   title: "Aires de Pausa",
   description: "Es un espacio de bienestar donde inspiro a las personas a que tomen conciencia para que descubran su poder interior y conecten con su escencia",
   icons: {
-    icon: '/hfondovioleta.png',
-    shortcut: '/hfondovioleta.png',
-    apple: '/hfondovioleta.png',
+    icon: '/logoadp.png',
+    shortcut: '/logoadp.png',
+    apple: '/logoadp.png',
   },
 };
 

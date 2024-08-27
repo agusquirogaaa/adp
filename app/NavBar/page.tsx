@@ -2,7 +2,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import Logo from "@/public/hblanco.png"
+import Logo from "@/public/adpblanco.png"
 import Image from 'next/image'
 import Link from 'next/link'
 const navigation = [
@@ -40,12 +40,13 @@ export default function NavBar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch xs:justify-start sm:justify-between">
-                <Link href="/#Inicio" className="flex flex-shrink-0 items-center">
+                <Link href="/#Inicio" className="flex flex-shrink-0 items-center text-decoration-none gap-2">
                   <Image
                     className="h-8 w-auto"
                     src={Logo}
-                    alt="Your Company"
+                    alt="Aires de Pausa"
                   />
+                  <h5 className='text-white text-md leading-none m-0 p-0 mt-1'>Aires de Pausa </h5>
                 </Link>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
