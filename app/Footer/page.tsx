@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Logo from "@/public/hblanco.png";
+import Logo from "@/public/adpblanco.png";
 import { FaWhatsapp, FaInstagram , FaFacebookSquare} from 'react-icons/fa';
 import { CiMail } from "react-icons/ci";
 
